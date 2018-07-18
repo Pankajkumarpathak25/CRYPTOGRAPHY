@@ -1,0 +1,99 @@
+#######################CRYPTOGRAPHY@@@@@#########
+
+crypto == secrate
+graphy == writting
+
+
+1.) ENCODEING == data which may hidden by applying algo..
+
+2.) DECODING ==
+
+
+
+# POPULAR ALGO for encoding..
+
+1.)BASE64
+
+
+
+# Software use to apply cryptography
+
+@1.)OPENSSL
+
+
+
+
+# FORMATE to encode
+
+=>openssl base64 -e      (USE CTRL+D TO EXCUTE)
+
+#FORMATE TO decode
+
+=>openssl base64 -d      (same )
+
+
+
+
+
+## encode a text file
+
+=> openssl base64 -e -in  file.txt
+
+=> openssl base64 -e -in file.txt -out encode.txt  (redirect out put in encode.txt)
+
+## decode a txt file
+
+=> openssl base64 -d -in encode.txt (file in which encode data is kept )
+
+
+################################CRYPTOGRAPHY######################################
+
+                                CRYPTOGRAPHY
+                                    /\
+                                   /  \
+                                  /    \
+                            =>ENCODE    =>KEYS
+                            =>DECODE
+
+KEYS = it works where data is encode after data is locked with a password..
+
+
+ DATA-------------------->BASE64------------------->KEYS----------------->CIPHER TEXT
+        encode                    locked with keys
+|________________________________________________________________________________________|
+                                WHOLE PROCESS CALLED ENCRYPTION
+
+
+
+
+
+                                   KEYS
+                                    /\
+                                   /  \
+                                  /    \
+                        1.) Symertic    2.) Assymertic
+                            keys            keys
+
+### symertic keys
+=> encryption decryption keys are same
+
+@@# ALGO used in symertic keys
+1.) AES ------>aes 128, aes 256
+
+2.) DES ------>des 31
+
+###FORMATE of encrypt
+
+=>openssl base64 -e -des3
+
+=>openssl base64 -e -des3 -out encry.txt
+
+###Formate of decrypt
+
+=>openssl base64 -d -des3 -in encry.txt
+
+
+
+
+-- INSERT --                                                                           49,1          64%
+
